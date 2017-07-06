@@ -1,0 +1,1 @@
+var contextPath = 'http://localhost:9888/spring-demo';

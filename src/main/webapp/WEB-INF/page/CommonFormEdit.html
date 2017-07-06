@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        input {
+            display: block;
+            margin: 5px;
+        }
+    </style>
+    <script type="text/javascript" src="js/common.js"></script>
 </head>
+
 <body>
-    <form action="/create">
+   <h2>hello, ${name} </h2>
+    <form id="form">
         <input type="text"  name="A_A1"  value="" />
         <input type="text"  name="A_A2"  value="" />
         <input type="text"  name="A_A3"  value="" />
@@ -16,7 +25,21 @@
         <input type="text"  name="A_B_B3"  value="" />
         <input type="text"  name="A_B_B4"  value="" />
 
-        <input type="submit" value="提交" />
+        <input type="button" onclick="submitForm();" value="提交" />
     </form>
+
+
+<script type="text/javascript">
+    /**
+     * you can not  use ''submit'  as function name otherwise ,form will submit  wit js code execute.
+     * */
+    function submitForm() {
+        alert(1);
+        this.form.action = contextPath + "/commonForm/save";
+        this.form.submit();
+    }
+</script>
+
+
 </body>
 </html>

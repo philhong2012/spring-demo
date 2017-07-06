@@ -21,7 +21,7 @@ public class CommonFormController {
     Logger logger = LoggerFactory.getLogger(CommonFormController.class);
     @RequestMapping("/create")
     public ModelAndView create() {
-        return new ModelAndView("CommonFormEdit");
+        return new ModelAndView("CommonFormEdit","name","程序员");
     }
 
 
