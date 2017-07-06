@@ -1,7 +1,5 @@
 package com.sqkouer.spring.demo;
 
-import org.springframework.stereotype.Service;
-
 /**
  * ${DESCRIPTION}
  *
