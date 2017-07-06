@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
  * @author hongxubing
  * @create 2017-06-26 18:15
  **/
-@Service("UserServiceImpl2")
+
 public class CustUserServiceImpl implements UserService {
     public User getUser(String id) {
         return null;

@@ -19,8 +19,8 @@ import org.springframework.util.Assert;
  @ContextConfiguration("/applicationContext.xml")
 public class UserServiceImplTest {
 
-  @Autowired
-  @Qualifier("UserServiceImpl")
+  //@Qualifier
+    @Autowired
   UserService userService;
 
    @Test

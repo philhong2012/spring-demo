@@ -1,5 +1,6 @@
 package com.sqkouer.spring.demo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
@@ -11,7 +12,6 @@ import org.springframework.util.Assert;
  * @author hongxubing
  * @create 2017-06-26 16:53
  **/
-@Service("UserServiceImpl")
 public class UserServiceImpl implements UserService {
     public User getUser(String id) {
         return null;
